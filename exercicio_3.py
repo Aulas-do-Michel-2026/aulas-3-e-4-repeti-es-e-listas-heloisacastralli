@@ -18,8 +18,11 @@ Digite a sua lista (separando os números por vírgula): 1, 2, 3, 4, 5
 Resposta:
 Os números ímpares são [1, 3, 5]
 """
-
-# Código para pegar a lista
 lista = [*map(int, input("Digite a sua lista (separando os números por vírgula): ").split(","))]
+lista_impares = []
 
-# Fazer a partir daqui...
+for numero in lista:
+    if numero % 2 != 0:
+        lista_impares.append(numero)
+
+print(lista_impares)
